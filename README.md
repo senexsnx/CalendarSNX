@@ -1,62 +1,62 @@
-# KalenderSNX
+# CalendarSNX
 
-`kalenderSNX.jsx` ist ein ExtendScript für Adobe InDesign. Das Skript erzeugt hochwertige Monatskalender mit eigenen Fotos, Layout-Vorlagen, Feiertagen, Kalenderwochen und wiederverwendbaren Presets.
+`kalenderSNX.jsx` is an ExtendScript for Adobe InDesign. It creates high-end monthly photo calendars with reusable layouts, public holidays, calendar weeks and presets.
 
-Aktuelle Version: **10.1**
+Current version: **10.1**
 
-## Funktionen
+## Features
 
-- 12 Monatsseiten plus optionales Deckblatt und Rückseite mit Miniaturen
-- 13 Bild-Slots: Titelbild und ein Bild pro Monat
-- Layouts `Klassik`, `Split`, `Vollbild-Overlay` und `Galerie`
-- sechs Farbthemen
-- Feiertage für alle 16 deutschen Bundesländer
-- Wochenstart Montag oder Sonntag
-- optionale ISO-Kalenderwochen
-- Bildauflösungsprüfung mit Warnung unter 200 ppi
-- Bildpool und späterer Bildtausch über die Bildrahmen
-- `.calpro`-Presets zum Speichern und Laden der Einstellungen
-- zentrale CALPRO-Zellen-, Absatz-, Zeichen- und Objektformate, damit das fertige Dokument in InDesign weiter angepasst werden kann
+- 12 monthly pages with optional cover and back page thumbnails
+- 13 image slots: one cover image plus one image for each month
+- `Classic`, `Split`, `Full-screen overlay` and `Gallery` layouts
+- six coordinated colour themes
+- public holidays for all 16 German federal states
+- Monday or Sunday week start
+- optional ISO calendar-week column
+- effective image-resolution warning below 200 ppi
+- image pool and later image replacement through the image frames
+- `.calpro` presets for saving and loading recurring jobs
+- central CALPRO cell, paragraph, character and object styles so the finished document remains editable in InDesign
 
 ## Installation
 
-1. `kalenderSNX.jsx` herunterladen.
-2. Die Datei in den InDesign-Ordner **Scripts Panel** kopieren.
-3. In InDesign `Fenster > Hilfsprogramme > Skripten` öffnen.
-4. `kalenderSNX.jsx` doppelt anklicken.
-5. Jahr, Format, Layout, Thema und Bilder wählen und **Kalender erstellen** drücken.
+1. Download [`kalenderSNX.jsx`](kalenderSNX.jsx).
+2. Copy it to InDesign's **Scripts Panel** folder.
+3. In InDesign, open `Window > Utilities > Scripts`.
+4. Double-click `kalenderSNX.jsx`.
+5. Choose the year, page size, layout, theme and images, then click **Kalender erstellen**.
 
-Das Skript wurde mit Adobe InDesign Version 21.0 getestet. Es benötigt keine externen Pakete und stellt keine Netzwerkverbindungen her.
+The script was tested with Adobe InDesign Version 21.0. It has no external package dependencies and does not make network requests.
 
-## Bilder
+## Images
 
-Für das vollständige Kalenderdokument können bis zu 13 Bilder geladen werden. Das Titelbild ist ein eigener Slot; wenn kein Titelbild ausgewählt wird, verwendet das Skript das Januarbild für das Deckblatt.
+A complete calendar can use up to 13 images. The cover is a separate slot; if no cover image is selected, the January image is used for the cover page.
 
-Die Screenshots zeigen den Dialog, die Layout-Vorschau, einzelne Monatsseiten und die Jahresübersicht:
+The screenshots show the dialog, layout preview, individual month pages and the year overview:
 
-![Skript-Dialog](screenshots/01-script-dialog.png)
+![Script dialog](screenshots/01-script-dialog.png)
 
-![August-Kalender](screenshots/02-august-calendar.png)
+![August calendar](screenshots/02-august-calendar.png)
 
-![Februar-Kalender](screenshots/03-february-calendar.png)
+![February calendar](screenshots/03-february-calendar.png)
 
-![Januar mit Feiertag](screenshots/04-january-holiday.png)
+![January holiday](screenshots/04-january-holiday.png)
 
-![Layout-Detail](screenshots/05-layout-detail.png)
+![Layout detail](screenshots/05-layout-detail.png)
 
-![Layout-Vorschau](screenshots/06-layout-preview.png)
+![Layout preview](screenshots/06-layout-preview.png)
 
-![Jahresübersicht](screenshots/07-year-overview.png)
+![Year overview](screenshots/07-year-overview.png)
 
-## Versionsstand
+## Version history
 
-- **10.1** — aktuelle Fassung aus dem InDesign-Skripte-Panel.
-- **10.0** — historische Sicherung unter [`archive/kalenderSNX_v10.0_20260919-1248.jsx`](archive/kalenderSNX_v10.0_20260919-1248.jsx).
+- **10.1** — current version from the InDesign Scripts Panel.
+- **10.0** — historical backup in [`archive/kalenderSNX_v10.0_20260919-1248.jsx`](archive/kalenderSNX_v10.0_20260919-1248.jsx).
 
-## Anpassung in InDesign
+## Editing the document in InDesign
 
-Nach dem Erstellen liegen die Formate in der Gruppe `CALPRO`. Absatz-, Zeichen-, Zellen- und Objektformate können dort angepasst werden; die Änderungen bleiben im Dokument editierbar.
+After creation, the styles are grouped under `CALPRO`. Paragraph, character, cell and object styles can be edited there; the changes remain editable in the generated document.
 
-## Lizenz
+## License
 
-Für dieses Repository ist derzeit keine separate Open-Source-Lizenz angegeben. Die Veröffentlichung dient zunächst der Dokumentation und Versionsverwaltung.
+No separate open-source license has been declared for this repository yet. The repository is currently published for documentation and version control.
